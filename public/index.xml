@@ -1,20 +1,43 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+
   <channel>
     <title>mobert.xyz</title>
     <link>https://mobert.xyz/</link>
-    <description>Recent content on mobert.xyz</description>
-    <generator>Hugo</generator>
+    <description>Recent blog posts on mobert.xyz</description>
+    
+    <generator>Hugo (https://gohugo.io)</generator>
+    
     <language>en-US</language>
-    <copyright>© Moritz Ebert</copyright>
-    <lastBuildDate>Sun, 02 Mar 2025 12:19:40 +0100</lastBuildDate>
+    
+    <managingEditor></managingEditor>
+    
+    <webMaster></webMaster>
+    
+    <lastBuildDate>Sun, 02 Mar 2025 12:19:40 +0800</lastBuildDate>
+    
     <atom:link href="https://mobert.xyz/index.xml" rel="self" type="application/rss+xml" />
+    
+
     <item>
       <title>Backups with restic from TrueNAS Scale to Hetzner Storage Box</title>
       <link>https://mobert.xyz/posts/backups-with-restic-on-truenas/</link>
-      <pubDate>Sun, 02 Mar 2025 12:19:40 +0100</pubDate>
-      <guid>https://mobert.xyz/posts/backups-with-restic-on-truenas/</guid>
-      <description>&lt;p&gt;Until recently, I didn’t have a proper backup strategy for my NAS. I simply replicated the data to an external hard drive, which was also located in my apartment – essentially the only copy of my data.&lt;/p&gt;&#xA;&lt;p&gt;Now that I’m using my NAS in a production environment and primarily store important data there, I need a reliable method to back up this data securely to the cloud and restore it in case of a failure.&lt;/p&gt;</description>
+      <pubDate>Sun, 02 Mar 2025 12:19:40 +0800</pubDate>
+      
+      <author></author>
+
+      
+      
+      
+      
+
+      <description>
+      Until recently, I didn’t have a proper backup strategy for my NAS. I simply replicated the data to an external hard drive, which was also located in my apartment – essentially the only copy of my data.
+Now that I’m using my NAS in a production environment and primarily store important data there, I need a reliable method to back up this data securely to the cloud and restore it in case of a failure.
+
+      </description>
+      <guid isPermaLink="true">https://mobert.xyz/posts/backups-with-restic-on-truenas/</guid>
     </item>
+    
   </channel>
 </rss>

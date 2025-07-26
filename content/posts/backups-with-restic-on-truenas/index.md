@@ -25,7 +25,7 @@ For this, I chose **[restic](https://restic.net)**.
 
 Since TrueNAS Scale is a closed system, restic cannot be installed via a package manager. Instead, I download the latest version directly from GitHub.
 
-### Installation commands:
+### Installation commands
 
 ```bash
 cd /root/

@@ -1,43 +1,37 @@
 baseURL = "https://mobert.xyz/"
 languageCode = "en-US"
 title = "mobert.xyz"
-theme="archie"
-copyright = "© Moritz Ebert"
-# Code Highlight
-pygmentsstyle = "rrt"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
+theme="anubis2"
 
+[pagination]
+pagerSize = 5
 
-pagination.pagerSize=3 # articles per page
-
-[params]
-	mode="toggle" # color-mode → light,dark,toggle or auto
-	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
-	subtitle = "Hi, I’m Moritz. Here on my personal blog I share notes, projects, and discoveries from my life as a sysadmin and homelab enthusiast."
-	mathjax = false # enable MathJax support
-	katex = false # enable KaTeX support
-
-# Social Tags
-
-[[params.social]]
-name = "GitHub"
-icon = "github"
-url = "https://github.com/moritzebert"
-
-# Main menu Items
+[params.author]
+name = "Moritz"
 
 [[menu.main]]
+identifier = "home"
 name = "Home"
 url = "/"
 weight = 1
 
 [[menu.main]]
-name = "Archive"
-url = "/posts"
+name = "Posts"
+identifier = "posts"
+url = "/posts/"
 weight = 2
 
 [[menu.main]]
+identifier = "tags"
 name = "Tags"
-url = "/tags"
+url = "/tags/"
 weight = 3
+
+[markup.goldmark.renderer]
+unsafe = true # Enable unsafe mode to have a better experience
+
+[markup.highlight]
+style = "catppuccin-frappe" # Find more style at here: https://swapoff.org/chroma/playground/
+
+[params.anubis2]
+  # Leave all parameters empty to use the default values.

@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+
   <channel>
-    <title>Categories on mobert.xyz</title>
-    <link>https://mobert.xyz/categories/</link>
-    <description>Recent content in Categories on mobert.xyz</description>
-    <generator>Hugo</generator>
+    <title>mobert.xyz</title>
+    <link>https://mobert.xyz/</link>
+    <description>Recent blog posts on mobert.xyz</description>
+    
+    <generator>Hugo (https://gohugo.io)</generator>
+    
     <language>en-US</language>
-    <copyright>© Moritz Ebert</copyright>
+    
+    <managingEditor></managingEditor>
+    
+    <webMaster></webMaster>
+    
+    
     <atom:link href="https://mobert.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
+    
   </channel>
 </rss>
