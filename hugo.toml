@@ -26,6 +26,8 @@ locale = "en-us"
     enableReadMoreButton = true
     enableRssIcon = true
     enableColorThemeSwitcher = true
+    colorTheme = "auto"
+    openInNewTab = true # open links in new ta
     tocWordCount = 100 # 0: disable toc. N: show toc if the post has more than N words.
     readNextPosts = 2 # 0: disable this feature. 1: show 1 related posts. N: show N related posts.
 
@@ -33,7 +35,7 @@ locale = "en-us"
     socialIcons = [
         { id = "github", url = "https://github.com/moritzebert/mobert-xyz" },
         { id = "linkedin", url = "https://www.linkedin.com/in/moritz-ebert-31b98625b/" },
-        { id = "email", url = "hello@mobert.xyz" },
+        { id = "email", url = "mailto:hello@mobert.xyz" },
         #{ id = "instagram", url = "#" },
         #{ id = "x", url = "#" }
     ]
