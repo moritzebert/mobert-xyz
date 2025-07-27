@@ -7,7 +7,46 @@ theme="anubis2"
 pagerSize = 5
 
 [params.author]
-name = "Moritz"
+name = "Moritz Ebert"
+email  = "hello@mobert.xyz"
+location = "Frankfurt"
+avatar = "https://avatars.githubusercontent.com/u/96344384?v=4"
+
+[params]
+description = "Anubis2 is another simple minimalist theme for Hugo blog engine."
+dateFormat = "2 Jan 2006"
+paginationSinglePost = true
+locale = "en-us"
+
+[params.anubis2]
+    hideFooterAttribution = true # hide "Powered by Hugo, theme" in footer
+    enableMathGlobally = false # MathJax (default is false)
+    enableCopyCodeButton = true
+    enableSummary = true # the summary is the preview of the post, if you disable it, the post will be shown only with the title.
+    enableReadMoreButton = true
+    enableRssIcon = true
+    enableColorThemeSwitcher = true
+    tocWordCount = 100 # 0: disable toc. N: show toc if the post has more than N words.
+    readNextPosts = 2 # 0: disable this feature. 1: show 1 related posts. N: show N related posts.
+
+    ## Social Icons
+    socialIcons = [
+        { id = "github", url = "https://github.com/moritzebert/mobert-xyz" },
+        { id = "linkedin", url = "https://www.linkedin.com/in/moritz-ebert-31b98625b/" },
+        { id = "email", url = "hello@mobert.xyz" },
+        #{ id = "instagram", url = "#" },
+        #{ id = "x", url = "#" }
+    ]
+
+    [params.anubis2.services]
+        [params.anubis2.services.giscus]
+            # Giscus Comment System https://giscus.app/
+            repo        = "moritzebert/mobert-xyz"
+            repoId      = "R_kgDOPSUr3Q"
+            category    = "General"
+            categoryId  = "DIC_kwDOPSUr3c4CtdVC"
+            dataMapping = "pathname"
+            lazyLoad    = false
 
 [[menu.main]]
 identifier = "home"
@@ -32,6 +71,4 @@ unsafe = true # Enable unsafe mode to have a better experience
 
 [markup.highlight]
 style = "catppuccin-frappe" # Find more style at here: https://swapoff.org/chroma/playground/
-
-[params.anubis2]
-  # Leave all parameters empty to use the default values.
+tabWidth = 4
