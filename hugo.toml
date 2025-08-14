@@ -13,7 +13,7 @@ location = "Frankfurt"
 avatar = "https://avatars.githubusercontent.com/u/96344384?v=4"
 
 [params]
-description = "Anubis2 is another simple minimalist theme for Hugo blog engine."
+description = "Welcome to my blog"
 dateFormat = "2 Jan 2006"
 paginationSinglePost = true
 locale = "en-us"
