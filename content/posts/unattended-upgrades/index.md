@@ -1,5 +1,5 @@
 +++
-title = 'Automating updates under Linux'
+title = 'Automating Linux updates with UnattendedUpgrades on debian'
 date = 2025-08-17T00:45:18+02:00
 tags = ["linux","automation","security"]
 draft = false
