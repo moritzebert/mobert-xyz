@@ -133,7 +133,7 @@ sudo apt update && sudo apt install msmtp msmtp-mta
 
 ### Configuration
 
-Switch to root - `su -root`.
+Switch to root - `su - root`.
 
 Create the config file `/root/.msmtprc`.
 
