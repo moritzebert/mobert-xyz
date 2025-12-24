@@ -45,7 +45,7 @@ sudo nano /etc/apt/apt.conf.d/52unattended-upgrades-local
 I aim to minimize maintenance — not because I’m lazy, but because I’d rather spend time on better things.
 For this reason, I also enabled feature updates. While this isn’t always recommended for production servers, the risk of breakage is close to zero. The only issues I’ve ever run into were with Docker container updates that broke apps due to upstream changes.
 
-### Enable feature updtes
+### Enable feature updates
 
 Add the following lines to your local config file:
 
@@ -135,10 +135,10 @@ sudo apt update && sudo apt install msmtp msmtp-mta
 
 Switch to root - `su - root`.
 
-Create the config file `/root/.msmtprc`.
+Create the config file `/etc/msmtprc`.
 
 ```bash
-cat << 'EOF' > ~/.msmtprc
+cat << 'EOF' > /etc/msmtprc
 defaults
 tls on
 
@@ -148,7 +148,7 @@ host mail.example.com
 port 25
 user username
 from someone@example.com
-passwordeval "cat ~/.msmtp-pass"
+passwordeval "cat /etc/msmtp-pass"
 
 account default : example.com
 EOF
@@ -157,7 +157,7 @@ EOF
 Store the password in a separate file.
 
 ```bash
-cat << 'EOF' > ~/.msmtp-pass
+cat << 'EOF' > /etc/msmtp-pass
 password
 EOF
 ```
@@ -165,8 +165,8 @@ EOF
 Set the correct permissions.
 
 ```bash
-chmod 600 ~/.msmtp-pass
-chmod 600 ~/.msmtprc
+chmod 600 /etc/msmtp-pass
+chmod 600 /etc/msmtprc
 ```
 
 Finally, I will configure `unattended-upgrades` to send mail notifications.
