@@ -41,16 +41,6 @@ locale = "en-us"
         #{ id = "x", url = "#" }
     ]
 
-    [params.anubis2.services]
-        [params.anubis2.services.giscus]
-            # Giscus Comment System https://giscus.app/
-            repo        = "moritzebert/mobert-xyz"
-            repoId      = "R_kgDOPSUr3Q"
-            category    = "General"
-            categoryId  = "DIC_kwDOPSUr3c4CtdVC"
-            dataMapping = "pathname"
-            lazyLoad    = false
-
 [[menu.main]]
 identifier = "home"
 name = "Home"
