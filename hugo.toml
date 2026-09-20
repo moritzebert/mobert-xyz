@@ -9,7 +9,7 @@ pagerSize = 5
 
 [params.author]
 name = "Moritz Ebert"
-email  = "hello@mobert.xyz"
+email  = "moritz.ebert@mailbox.org"
 location = "Frankfurt"
 avatar = "https://avatars.githubusercontent.com/u/96344384?v=4"
 
@@ -36,7 +36,7 @@ locale = "en-us"
     socialIcons = [
         { id = "github", url = "https://github.com/moritzebert/mobert-xyz" },
         { id = "linkedin", url = "https://www.linkedin.com/in/moritz-ebert-31b98625b/" },
-        { id = "email", url = "mailto:hello@mobert.xyz" },
+        { id = "email", url = "mailto:moritz.ebert@mailbox.org" },
         #{ id = "instagram", url = "#" },
         #{ id = "x", url = "#" }
     ]
