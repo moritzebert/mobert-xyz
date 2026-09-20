@@ -1,1 +1,1 @@
-rclone sync --interactive public/ stardust-1:/opt/stacks/caddy/blog
+rclone sync --interactive public/ mobert-xyz:data/blog/public
