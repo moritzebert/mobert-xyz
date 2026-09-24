@@ -3,6 +3,7 @@ title = 'Secure Erase on macOS 27 Golden Gate'
 date = 2026-09-23T23:36:30+02:00
 tags = ["storage"]
 draft = false
+toc = false
 +++
 
 I'm giving my old Raspberry Pi 4 to someone, so the SD card needs a proper wipe first. I put the card into my MacBook, opened Disk Utility , selected the card, and clicked **Erase**. 
@@ -11,7 +12,7 @@ There was no **Security Options** button, the slider that used to let you choose
 
 The capability still exists in Terminal. Maybe they removed it because multi-pass erase makes more sense on a spinning hard drive. But who knows why they chose to remove it from the GUI.
 
-## How to do it
+# How to do it
 
 First, find your card:
 
@@ -46,6 +47,6 @@ $ diskutil secureErase 1 /dev/disk4
 
 32GB SD card took about 5 minutes. Multi-pass options will obviously take longer.
 
-## One last tought
+# One last tought
 
 Because SD cards are flash storage, no overwrite can guarantee every bit is unrecoverable. That's fine as long as there's no truly sensitive data on the card, which was the case for mine. If yours did hold something sensitive, I would probably just physically destroy it. SD cards are cheap.
