@@ -1,1 +1,1 @@
-rclone sync --interactive public/ mobert-xyz:data/blog/public
+rclone sync public/ mobert-xyz:data/blog/public
