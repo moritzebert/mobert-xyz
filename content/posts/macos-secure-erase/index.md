@@ -22,7 +22,7 @@ $ diskutil list
 
 Check the size to be sure you have the right disk, and note the identifier (something like `/dev/disk4`).
 
-First let's check the options for secure erase.
+Let's check the options for secure erase.
 
 ```bash
 $ diskutil secureErase
